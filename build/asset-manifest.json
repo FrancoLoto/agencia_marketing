@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6efceb92.css",
+    "main.js": "/static/js/main.697244c6.js",
+    "static/media/marketing-logo.png": "/static/media/marketing-logo.6d11ad0299de427a19a9.png",
+    "index.html": "/index.html",
+    "main.6efceb92.css.map": "/static/css/main.6efceb92.css.map",
+    "main.697244c6.js.map": "/static/js/main.697244c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6efceb92.css",
+    "static/js/main.697244c6.js"
+  ]
+}

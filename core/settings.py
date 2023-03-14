@@ -54,7 +54,7 @@ CKEDITOR_CONFIGS = {
         'autoParagraph': False
     }
 }
-CKEDITOR_UPLOAD_PATH = "/media/"
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
 
 MIDDLEWARE = [
@@ -140,7 +140,7 @@ STATIC_URL = 'static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-STAITCFILES_DIRS = [
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'build/static')
 ]
 

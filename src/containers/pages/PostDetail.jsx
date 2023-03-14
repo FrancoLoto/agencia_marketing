@@ -26,7 +26,7 @@ function PostDetail({
             <Navbar/>
             {
                 post && post.slug == slug ?
-                <div className="pt-36">
+                <div className="pt-24">
 
                     <div className="relative bg-indigo-800">
                         <div className="absolute inset-0">
