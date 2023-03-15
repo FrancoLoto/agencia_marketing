@@ -88,7 +88,7 @@ class PostDetailView(APIView):
                 view = ViewCount(post=post, ip_address=ip)
                 view.save()
                 post.views += 1
-                view.save()
+                post.save()
 
             return Response({'posts': serializer.data}, status=status.HTTP_200_OK)
         
