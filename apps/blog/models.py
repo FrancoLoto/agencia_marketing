@@ -14,7 +14,8 @@ class Post(models.Model):
 
     class Meta:
         ordering = ('-published',)
-
+        
+        
     class PostObjects(models.Manager):
 
         def get_queryset(self):

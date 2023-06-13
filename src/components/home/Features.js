@@ -1,20 +1,14 @@
-import { CheckIcon } from '@heroicons/react/24/outline'
+import { StarIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom'
 
 const features = [
-  {
-    name: 'Consultoría digital',
-    description: 'Dada la rápida digitalización global cualquier negocio debe tener buena presencia online.',
-  },
-  { name: 'Google ADS Search', description: 'Anuncios de Google para el momento de la búsqueda en el navegador.' },
-  {
-    name: 'Google ADS Display',
-    description: 'Campañas con anuncios visualmente atractivos en la red de Display de Google.',
-  },
-  { name: 'Google ADS Remarketing', description: 'Anuncios personalizados en función de los productos o servicios que los clientes vieron en su sitio web.' },
-  { name: 'Google ADS Shopping', description: 'Es un tipo de anuncio que muestra información detallada acerca de productos específicos que vendes.' },
-  { name: 'Facebook e Instagram ADS', description: 'Creación de anuncios para las redes sociales Facebook e Instagram.' },
-  { name: 'Email Marketing', description: 'Anuncios enviados al mail de la persona registrada o subscripta en su web.' },
-  { name: 'Ecommerce Marketing', description: 'Creamos anuncios personalizados para su sitio web de ecommerce.' },
+  { name: 'Vigilancia física', description: 'Supermercado, bancos, instituciones privadas y públicas.' },
+  { name: 'Vigilancia local y rural', description: 'Casas y barrios privados, campos, chacras.' },
+  { name: 'Traslado y seguimiento de valores en ruta', description: 'Seguimiento en ruta para todo tipo de vehículos.' },
+
+  { name: 'Vigilancia para eventos', description: 'Control de admisión y permanencia. Cumpleaños, casamientos, eventos privados y públicos.' },
+  { name: 'Custodia VIP', description: 'Destinado para altos directivos, figuras públicas, grupos familiares.' },
+  { name: 'Seguridad de maquinaria vial', description: 'Seguridad para maquinaria vial en zonas rurales o parques cerrados.' },
 ]
 
 export default function Features() {
@@ -22,10 +16,10 @@ export default function Features() {
     <div className="bg-white">
       <div className="mx-auto lg:mx-12 max-w-full py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:py-24 lg:px-8">
         <div>
-          <h2 className="text-lg font-semibold text-indigo-600">Todo lo que necesitas</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900">Nuestros servicios</p>
+          <h2 className="text-lg font-semibold text-celeste">Servicios de seguridad</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900">¿Qué servicios ofrecemos?</p>
           <p className="mt-4 text-lg text-gray-500">
-            Aquí encontrarás los servicios que nuestro equipo ofrece para tu empresa. Hecha un vistazo.
+            Estos son los servicios de seguridad que ofrecemos, diseñados para brindarte tranquilidad y protección en cada aspecto de tu vida. Estamos comprometidos en adaptar nuestras soluciones a tus necesidades específicas, para garantizar una protección integral y personalizada. Si deseas obtener más información acerca de nuestros servicios y cómo podemos ayudarte, te invitamos a hacer <Link to="/servicios" className='text-celeste hover:text-celeste-dos'>click aquí</Link>.
           </p>
         </div>
         <div className="mt-12 lg:col-span-2 lg:mt-0">
@@ -33,7 +27,7 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
-                  <CheckIcon className="absolute h-6 w-6 text-green-500" aria-hidden="true" />
+                  <StarIcon className="absolute h-6 w-6 text-yellow-400" aria-hidden="true" />
                   <p className="ml-9 text-lg font-medium leading-6 text-gray-900">{feature.name}</p>
                 </dt>
                 <dd className="mt-2 ml-9 text-base text-gray-500">{feature.description}</dd>

@@ -13,8 +13,8 @@ function ServicesList({posts, section_title}) {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{section_title}</h2>
           </div>
           <div className="mx-auto mt-14 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-            {posts.map((post, index) => (
-              <ServiceCard data={post} index={index}/>
+            {posts.map((post) => (
+              <ServiceCard key={post.id} data={post} />
             ))}
           </div>
         </div>

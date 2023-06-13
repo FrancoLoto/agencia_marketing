@@ -3,69 +3,57 @@ import Navbar from "components/navigation/Navbar"
 import Header from "components/services/Header"
 import ServicesList from "components/services/ServicesList"
 import Layout from "hocs/layouts/Layout"
-import megafono_img from "assets/img/services/megafono.png"
-import desarrolloweb_img from "assets/img/services/desarrollo-web.png"
-import tiendaonline_img from "assets/img/services/tienda-online.png"
+import vigilancia_fisica from "assets/img/vigilancia-fisica.png"
+import vigilancia_eventos from "assets/img/vigilancia-eventos.png"
+import vigilancia_local_rural from "assets/img/vigilancia-local-y-rural.png"
+import seguridad_coche from "assets/img/seguro-de-coche.png"
+import escudo_seguro from "assets/img/escudo-seguro.png"
+import cono_trafico from "assets/img/cono-de-trafico.png"
 import { useEffect } from "react"
 import { Helmet } from 'react-helmet-async';
 
 const posts_services = [
     {
-      title: 'Consultoría y Marketing Digital',
-      img: megafono_img,
-      href: '#',
-      category: { name: 'Article', href: '#' },
+      id: 1,
+      title: 'Vigilancia física',
+      img: vigilancia_fisica,
       description:
-        'Servicio integral digital enfocado en la eficiencia y en la optimización del ROI, optimizando la estructura digital...',
-      date: 'Mar 16, 2020',
-      datetime: '2020-03-16',
-      imageUrl:
-        'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-      readingTime: '6 min',
-      author: {
-        name: 'Roel Aufderehar',
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
+        'El servicio consiste en la implementación del plan de seguridad establecido, que tendrá como misión la protección preventiva del objetivo. Para bancos, supermercados, empresas, etc.',
     },
     {
-      title: 'Desarrollo WEB & E-Commerce',
-      img: desarrolloweb_img,
-      href: '#',
-      category: { name: 'Video', href: '#' },
+      id: 2,
+      title: 'Vigilancia para eventos',
+      img: vigilancia_eventos,
       description:
-        'Diseñamos y desarrollamos tu sitio web optimizado. Contamos con un equipo...',
-      date: 'Mar 10, 2020',
-      datetime: '2020-03-10',
-      imageUrl:
-        'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-      readingTime: '4 min',
-      author: {
-        name: 'Brenna Goyette',
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
+        'Ofrecemos el servicio de control de admisión y permanencia para todo tipo de eventos privados y públicos: cumpleaños, casamientos, fiestas privadas, actos, etc.',
     },
     {
-      title: 'Diseño & Content Marketing',
-      img: tiendaonline_img,
-      href: '#',
-      category: { name: 'Case Study', href: '#' },
+      id: 3,
+      title: 'Vigilancia local y rural',
+      img: vigilancia_local_rural,
       description:
-        'Diseños de alto impacto. Ayudamos a tu empresa a crear y optimizar su identidad de marca...',
-      date: 'Feb 12, 2020',
-      datetime: '2020-02-12',
-      imageUrl:
-        'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-      readingTime: '11 min',
-      author: {
-        name: 'Daniela Metz',
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
+        'Servicio de vigilancia y monitoreo para casas, barrios privados, campos y chacras. Realizamos análisis de riesgo.',
+    },
+    {
+      id: 4,
+      title: 'Traslado de valores en ruta',
+      img: seguridad_coche,
+      description:
+        'Realizamos seguimiento y traslado de mercadería, bienes y valores en tránsito.',
+    },
+    { 
+      id: 5,
+      title: 'Custodia VIP',
+      img: escudo_seguro,
+      description:
+        'Este servicio está orientado hacia personas expuestas a riesgos por su empleo, status de celebridad, asociaciones, etc.',
+    },
+    {
+      id: 6,
+      title: 'Seguridad para maquinaria vial',
+      img: cono_trafico,
+      description:
+        'Servicio de seguridad especializado para maquinaria vial en zonas rurales o parques cerrados.',
     },
   ]
 
@@ -77,33 +65,33 @@ function Services(){
     return(
         <Layout>
           <Helmet>
-            <title>Marketing Agencia | Servicios</title>
-            <meta name="description" content="Estos son los servicios que ofrecemos en Marketing"/> 
-            <meta name="keywords" content='servicios de marketing, marketing digital servicios'/>
+            <title>MG Seguridad Privada | Servicios</title>
+            <meta name="description" content="Estos son los servicios que ofrecemos en MG Seguridad Privada"/> 
+            <meta name="keywords" content='servicios de seguridad, mg servicios de seguridad'/>
             <meta name="robots" content='all'/>
-            <link rel="canonical" href="https://www.marketing.com/"/>
-            <meta name="author" content="Marketing"/>
+            <link rel="canonical" href="https://www.mgseguridadprivada.com.ar/"/>
+            <meta name="author" content="Seguridad"/>
             <meta name="publisher" content="Franco Loto"/>
 
             {/* Social Media Tags */}
-            <meta property='og:title' content='Marketing Agencia'/>
+            <meta property='og:title' content='MG Seguridad Privada'/>
             <meta property='og:description' content='Estos son los servicios que ofrecemos en Marketing'/>
-            <meta property='og:url' content='https://www.marketing.com/'/>
-            <meta property='og:image' content='https://img.freepik.com/vector-gratis/plantilla-logotipo-marketing-flecha_23-2149105274.jpg'/>
+            <meta property='og:url' content='https://www.mgseguridadprivada.com.ar/'/>
+            <meta property='og:image' content='https://postimg.cc/060wgC76'/>
 
-            <meta name="twitter:title" content='Marketing Agencia' />
+            <meta name="twitter:title" content='MG Seguridad Privada' />
             <meta
                 name="twitter:decription"
-                description='Estos son los servicios que ofrecemos en Marketing'
+                description='Estos son los servicios que ofrecemos en MG Seguridad Privada'
             />
-            <meta name="twitter:image" content="https://img.freepik.com/vector-gratis/plantilla-logotipo-marketing-flecha_23-2149105274.jpg"/>
+            <meta name="twitter:image" content="https://postimg.cc/060wgC76"/>
             <meta name="twitter:card" content="summary_large_image"/>
 
           </Helmet>
             <Navbar/>
-            <div className="pt-28">
+            <div className="pt-40">
                 <Header/>
-                <ServicesList posts={posts_services} section_title={'Servicios de Marketing'}/>
+                <ServicesList posts={posts_services} section_title={'Servicios de Seguridad'}/>
             </div>
             <Footer/>
         </Layout>

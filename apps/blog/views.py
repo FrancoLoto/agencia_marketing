@@ -90,30 +90,11 @@ class PostDetailView(APIView):
                 post.views += 1
                 post.save()
 
-            return Response({'posts': serializer.data}, status=status.HTTP_200_OK)
+            return Response({'post': serializer.data}, status=status.HTTP_200_OK)
         
         else:
             return Response({'error': 'Post no existe'}, status=status.HTTP_404_NOT_FOUND)
 
-
-class SearchBlogView(APIView):
-
-    permission_classes = (permissions.AllowAny,)
-
-    def get(self, request, format=None):
-
-        search_term = request.query_params.get('s')
-        matches = Post.postobjects.filter(
-            Q(title__icontains=search_term) |
-            Q(description__icontains=search_term) |
-            Q(category__name__icontains=search_term)
-        )
-
-        paginator = LargeSetPagination()
-        results = paginator.paginate_queryset(matches, request)
-
-        serializer = PostListSerializer(results, many=True)
-        return paginator.get_paginated_response({'filtered_posts': serializer.data})
 
 
 

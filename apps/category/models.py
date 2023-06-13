@@ -4,8 +4,8 @@ from django.db import models
 class Category(models.Model):
 
     class Meta:
-        verbose_name = 'Category'
-        verbose_name_plural = 'Categories'
+        verbose_name = 'Categoría'
+        verbose_name_plural = 'Categorías'
 
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)

@@ -16,85 +16,57 @@ function About(){
     return(
         <Layout>
             <Helmet>
-                <title>Marketing Agencia | Nosotros</title>
-                <meta name="description" content="Sobre nosotros en Marketing"/> 
-                <meta name="keywords" content='historia de Marketing, marketing digital nosotros'/>
+                <title>MG Seguridad Privada | Nosotros</title>
+                <meta name="description" content="Sobre nosotros en MG Seguridad Privada"/> 
+                <meta name="keywords" content='mg seguridad privada, mg seguridad privada quienes somos'/>
                 <meta name="robots" content='all'/>
-                <link rel="canonical" href="https://www.marketing.com/"/>
-                <meta name="author" content="Marketing"/>
+                <link rel="canonical" href="https://www.mgseguridadprivada.com.ar/"/>
+                <meta name="author" content="Seguridad"/>
                 <meta name="publisher" content="Franco Loto"/>
 
                 {/* Social Media Tags */}
-                <meta property='og:title' content='Marketing Agencia'/>
-                <meta property='og:description' content='Sobre nosotros en Marketing'/>
-                <meta property='og:url' content='https://www.marketing.com/'/>
-                <meta property='og:image' content='https://img.freepik.com/vector-gratis/plantilla-logotipo-marketing-flecha_23-2149105274.jpg'/>
+                <meta property='og:title' content='MG Seguridad Privada'/>
+                <meta property='og:description' content='Sobre nosotros en MG Seguridad Privada'/>
+                <meta property='og:url' content='https://www.mgseguridadprivada.com.ar/'/>
+                <meta property='og:image' content='https://postimg.cc/060wgC76'/>
 
-                <meta name="twitter:title" content='Marketing Agencia' />
+                <meta name="twitter:title" content='MG Seguridad Privada' />
                 <meta
                     name="twitter:decription"
-                    description='Sobre nosotros en Marketing'
+                    description='Sobre nosotros en MG Seguridad Privada'
                 />
-                <meta name="twitter:image" content="https://img.freepik.com/vector-gratis/plantilla-logotipo-marketing-flecha_23-2149105274.jpg"/>
+                <meta name="twitter:image" content="https://postimg.cc/060wgC76"/>
                 <meta name="twitter:card" content="summary_large_image"/>
 
             </Helmet>
             <Navbar/>
-            <div className="pt-28">
+            <div className="pt-40">
                 <Header/>
                 <TestStats/>
                 <Images/>
-                <div className="bg-white">
-                    <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                    <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                        <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
-                    </div>
-                    <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                        <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
-                    </div>
-                    <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                        <img className="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
-                    </div>
-                    <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                        <img
-                        className="h-12"
-                        src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                        alt="Transistor"
-                        />
-                    </div>
-                    <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-                        <img
-                        className="h-12"
-                        src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                        alt="Workcation"
-                        />
-                    </div>
-                </div>
-                </div>
-            </div>
+                
             </div>
             <Features/>
             <Team/>
             <div className="bg-gray-50">
                 <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                <span className="block">Listo para comenzar?</span>
-                <span className="block text-indigo-600">Contactate con nuestro equipo.</span>
+                <span className="block">Tenés dudas?</span>
+                <span className="block text-celeste">Contactate con nuestro equipo.</span>
                 </h2>
                 <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
                 <div className="inline-flex rounded-md shadow">
                 <a
                 href="/contacto"
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-celeste px-5 py-3 text-base font-medium text-white hover:bg-celeste-dos"
                 >
-                Comenzar
+                Contactar
                 </a>
                 </div>
                 <div className="ml-3 inline-flex rounded-md shadow">
                 <a
                 href="/servicios"
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-celeste hover:bg-indigo-50"
                 >
                 Aprender más
                 </a>

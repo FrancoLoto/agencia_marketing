@@ -10,26 +10,26 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Marketing Agencia | Inicio</title>
-        <meta name="description" content="La mejor agencia de marketing del mundo"/> 
-        <meta name="keywords" content='agencia de marketing, marketing digital'/>
+        <title>MG Seguridad Privada | Inicio</title>
+        <meta name="description" content="Seguridad a cada paso."/> 
+        <meta name="keywords" content='mg seguridad privada, seguridad general conesa, seguridad privada conesa'/>
         <meta name="robots" content='all'/>
-        <link rel="canonical" href="https://www.marketing.com/"/>
-        <meta name="author" content="Marketing"/>
+        <link rel="canonical" href="https://www.mgseguridadprivada.com.ar/"/>
+        <meta name="author" content="Seguridad"/>
         <meta name="publisher" content="Franco Loto"/>
 
         {/* Social Media Tags */}
-        <meta property='og:title' content='Marketing Agencia'/>
-        <meta property='og:description' content='La mejor agencia de marketing del mundo'/>
-        <meta property='og:url' content='https://www.marketing.com/'/>
-        <meta property='og:image' content='https://img.freepik.com/vector-gratis/plantilla-logotipo-marketing-flecha_23-2149105274.jpg'/>
+        <meta property='og:title' content='MG Seguridad Privada'/>
+        <meta property='og:description' content='Seguridad a cada paso.'/>
+        <meta property='og:url' content='https://www.mgseguridadprivada.com.ar/'/>
+        <meta property='og:image' content='https://postimg.cc/060wgC76'/>
 
-        <meta name="twitter:title" content='Marketing Agencia' />
+        <meta name="twitter:title" content='MG Seguridad Privada' />
         <meta
             name="twitter:decription"
-            description='La mejor agencia de marketing del mundo'
+            description='Seguridad a cada paso.'
         />
-        <meta name="twitter:image" content="https://img.freepik.com/vector-gratis/plantilla-logotipo-marketing-flecha_23-2149105274.jpg"/>
+        <meta name="twitter:image" content="https://postimg.cc/060wgC76"/>
         <meta name="twitter:card" content="summary_large_image"/>
 
       </Helmet>

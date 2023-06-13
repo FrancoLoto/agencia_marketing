@@ -1,8 +1,9 @@
+import equipomg from 'assets/img/equipomg.png'
+
+
 const stats = [
-    { label: 'Founded', value: '2021' },
-    { label: 'Employees', value: '5' },
-    { label: 'Beta Users', value: '521' },
-    { label: 'Raised', value: '$25M' },
+    { label: 'Foundación', value: '2017' },
+    { label: 'Ubicación', value: 'General Conesa, Río Negro' },
   ]
   
   export default function TestStats() {
@@ -39,23 +40,17 @@ const stats = [
               <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
                 <img
                   className="absolute inset-0 h-full w-full object-cover"
-                  src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
+                  src={equipomg}
                   alt=""
                 />
-                <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
-                <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90" />
+                <div className="absolute inset-0 bg-celeste-dos mix-blend-multiply" />
+                <div className="absolute inset-0 bg-gradient-to-t from-celeste-dos via-celeste-dos opacity-80" />
                 <div className="relative px-8">
-                  <div>
-                    <img
-                      className="h-12"
-                      src="https://tailwindui.com/img/logos/workcation.svg?color=white"
-                      alt="Workcation"
-                    />
-                  </div>
+                  
                   <blockquote className="mt-8">
                     <div className="relative text-lg font-medium text-white md:flex-grow">
                       <svg
-                        className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-indigo-400"
+                        className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-celeste"
                         fill="currentColor"
                         viewBox="0 0 32 32"
                         aria-hidden="true"
@@ -63,13 +58,12 @@ const stats = [
                         <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                       </svg>
                       <p className="relative">
-                        Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
-                        Montes, magna cursus nulla feugiat dignissim id lobortis amet.
+                        En MG Seguridad Privada creemos en la importancia de cada persona, el capital humano. Por eso contamos con profesionales totalmente capacitados y un gran espíritu de equipo.
                       </p>
                     </div>
   
                     <footer className="mt-4">
-                      <p className="text-base font-semibold text-indigo-200">Sarah Williams, CEO at Workcation</p>
+                      <p className="text-base font-semibold text-celeste">Nuestro equipo, trabajando en la localidad de General Conesa.</p>
                     </footer>
                   </blockquote>
                 </div>
@@ -81,24 +75,18 @@ const stats = [
             {/* Content area */}
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                On a mission to empower teams
+                Su tranquilidad es nuestra misión
               </h2>
               <div className="mt-6 space-y-6 text-gray-500">
-                <p className="text-lg">
-                  Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                  pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel
-                  porttitor vitae ut. Amet vitae fames senectus vitae.
+                <p className="text-lg">                 
+                Somos MG Seguridad Privada, una empresa dedicada a brindar soluciones integrales de seguridad para garantizar la tranquilidad y protección de nuestros clientes. Nos destacamos por nuestro compromiso inquebrantable con la excelencia y la profesionalidad en cada uno de nuestros servicios.
+
                 </p>
                 <p className="text-base leading-7">
-                  Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
-                  pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique
-                  eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu
-                  viverra donec ut volutpat donec laoreet quam urna.
+                Nuestro equipo está formado por expertos en seguridad altamente capacitados, quienes se esfuerzan día a día para superar las expectativas de nuestros clientes. Trabajamos de cerca con cada uno de ellos, comprendiendo sus necesidades específicas y adaptando nuestros servicios para proporcionar soluciones personalizadas y efectivas.
                 </p>
                 <p className="text-base leading-7">
-                  Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet
-                  velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus
-                  egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
+                En MG Seguridad Privada, valoramos la confianza depositada en nosotros y nos comprometemos a actuar con integridad y transparencia en todas nuestras operaciones. Nuestra dedicación hacia la innovación nos impulsa a estar a la vanguardia de las últimas tecnologías y tendencias en seguridad, garantizando así una protección efectiva y actualizada.
                 </p>
               </div>
             </div>
@@ -113,12 +101,7 @@ const stats = [
                   </div>
                 ))}
               </dl>
-              <div className="mt-10">
-                <a href="#" className="text-base font-medium text-indigo-600">
-                  Learn more about how we're changing the world
-                  <span aria-hidden="true"> &rarr;</span>
-                </a>
-              </div>
+              
             </div>
           </div>
         </div>

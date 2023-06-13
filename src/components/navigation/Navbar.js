@@ -1,48 +1,35 @@
 import { connect } from "react-redux"
 import { Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { useState, Fragment } from "react"
 import {Link, NavLink} from 'react-router-dom'
-import logo_marketing from 'assets/img/marketing-logo.png'
-import DotLoader from 'react-spinners/DotLoader'
-import { isConditionalExpression } from "typescript"
+import logo_mg from 'assets/img/logo.png'
+
+
 
 const solutions = [
     {
-        name: 'Casos',
-        description: 'Algunos casos de estudio.',
-        href: '/casos',
-        icon: IconOne,
+      name: 'Nosotros',
+      description: 'Quienes somos.',
+      href: '/nosotros',
+      icon: IconOne,
     },
     {
         name: 'Servicios',
         description: 'Nuestros servicios.',
         href: '/servicios',
-        icon: IconTwo,
-      },
-      {
-        name: 'Nosotros',
-        description: 'Quienes somos.',
-        href: '/nosotros',
-        icon: IconThree,
-      },
-      {
-        name: 'Carreras',
-        description: 'Nuestras carreras disponibles.',
-        href: '/carreras',
-        icon: IconThree,
+        icon: IconOne,
       },
       {
         name: 'Blog',
         description: 'Sección de blog.',
         href: '/blog',
-        icon: IconThree,
+        icon: IconOne,
       },
       {
         name: 'Contacto',
         description: 'Contáctate con nuestro equipo.',
         href: '/contacto',
-        icon: IconThree,
+        icon: IconOne,
       },
 ]
 
@@ -57,10 +44,9 @@ function Navbar(){
         if(document.getElementById('navbar')){
             if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById('navbar').classList.add('shadow-navbar');
-                document.getElementById('navbar').classList.add('bg-gray-bg');
             }else{
                 document.getElementById('navbar').classList.remove('shadow-navbar');
-                document.getElementById('navbar').classList.remove('bg-gray-bg');
+
             }
         }
     }
@@ -68,44 +54,35 @@ function Navbar(){
     const [open, setOpen] = useState(false)
 
     return(
-        <nav id='navbar' className='w-full py-6 bg-gray-bg top-0 transition duration-300 ease-in-out z-40 fixed'>
-            <div className="bg-gray-bg px-4 sm:px-6">
+        <nav data-scroll data-scroll-id="hey" id='navbar' className='bg-black w-full py-6 top-0 transition duration-300 ease-in-out z-40 fixed'>
+            <div className="px-2 sm:px-4">
                 <div className="-ml-4 -mt-2 hidden lg:flex flex-wrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
                     <Link to="/" className="ml-4 mt-2">
                     <img
-                    src={logo_marketing}
-                    width={100}
-                    height={80}
+                    src={logo_mg}
+                    width={80}
+                    height={60}
                     className=""/>
                     </Link>
                     <div className="ml-4 mt-2 flex-shrink-0">
-                    <NavLink to='/servicios' className="text-lg inline-flex font-medium leading-6 text-indigo-900 hover:text-indigo-600 mx-4">Servicios</NavLink>
-                    <NavLink to='/nosotros' className="text-lg inline-flex font-medium leading-6 text-indigo-900 hover:text-indigo-600 mx-4">Nosotros</NavLink>
-                    <NavLink to='/casos' className="text-lg inline-flex font-medium leading-6 text-indigo-900 hover:text-indigo-600 mx-4">Casos</NavLink>
-                    <NavLink to='/carreras' className="text-lg inline-flex font-medium leading-6 text-indigo-900 hover:text-indigo-600 mx-4">Carreras</NavLink>
-                    <NavLink to='/blog' className="text-lg inline-flex font-medium leading-6 text-indigo-900 hover:text-indigo-600 mx-4">Blog</NavLink>
-                    <NavLink to='/contacto' className="text-lg inline-flex font-medium leading-6 text-indigo-900 hover:text-indigo-600 mx-4">Contacto</NavLink>
+                    <NavLink to='/nosotros' className="text-lg inline-flex font-semibold leading-6 text-gray-50 border-b-2 border-transparent hover:border-celeste transition duration-300 ease-in-out mx-4">Nosotros</NavLink>
+                    <NavLink to='/servicios' className="text-lg inline-flex font-semibold leading-6 text-gray-50 border-b-2 border-transparent hover:border-celeste transition duration-300 ease-in-out mx-4">Servicios</NavLink>
+                    <NavLink to='/blog' className="text-lg inline-flex font-semibold leading-6 text-gray-50 border-b-2 border-transparent hover:border-celeste transition duration-300 ease-in-out mx-4">Blog</NavLink>
+                    <NavLink to='/contacto' className="text-lg inline-flex font-semibold leading-6 text-gray-50 border-b-2 border-transparent hover:border-celeste transition duration-300 ease-in-out mx-4">Contacto</NavLink>
 
-                    <Link
-                        to="/contacto"
-                        type="button"
-                        className="inline-flex ml-12 items-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-900 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        Contratar
-                        <DotLoader className="ml-3 -mr-1 h-5 w-5" aria-hidden="true" loading={loading} size={15} color="#ffffff"/>
-                    </Link>
                     </div>
                 </div>
                 <div className="-ml-4 -mt-2 lg:hidden flex flex-wrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
                     <Link to="/" className="ml-4 mt-2">
                     <img
-                    src={logo_marketing}
-                    width={100}
-                    height={80}
+                    src={logo_mg}
+                    width={80}
+                    height={60}
                     className=""/>
                     </Link>
                     <div className="ml-4 mt-2 flex-shrink-0">
 
-                    <Popover className="relative">
+                    <Popover className="relative bg-gray-50 rounded-sm">
                         {({ open }) => (
                         <>
                             <Popover.Button
@@ -137,7 +114,7 @@ function Navbar(){
                                     <Link
                                         key={item.name}
                                         to={item.href}
-                                        className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                                        className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-celeste focus-visible:ring-opacity-50"
                                     >
                                         <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
                                         <item.icon aria-hidden="true" />
@@ -153,21 +130,7 @@ function Navbar(){
                                     </Link>
                                     ))}
                                 </div>
-                                <div className="bg-gray-50 p-4">
-                                    <a
-                                    href="##"
-                                    className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                                    >
-                                    <span className="flex items-center">
-                                        <span className="text-sm font-medium text-gray-900">
-                                        Documentation
-                                        </span>
-                                    </span>
-                                    <span className="block text-sm text-gray-500">
-                                        Start integrating products and tools
-                                    </span>
-                                    </a>
-                                </div>
+                                
                                 </div>
                             </Popover.Panel>
                             </Transition>
@@ -199,73 +162,28 @@ function IconOne() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="48" height="48" rx="8" fill="#FFEDD5" />
+        <rect width="48" height="48" rx="8" fill="#01b8b6" />
         <path
           d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z"
-          stroke="#FB923C"
+          stroke="#1b83ac"
           strokeWidth="2"
         />
         <path
           fillRule="evenodd"
           clipRule="evenodd"
           d="M16.7417 19.8094V28.1906L24 32.3812L31.2584 28.1906V19.8094L24 15.6188L16.7417 19.8094Z"
-          stroke="#FDBA74"
+          stroke="#1b83ac"
           strokeWidth="2"
         />
         <path
           fillRule="evenodd"
           clipRule="evenodd"
           d="M20.7417 22.1196V25.882L24 27.7632L27.2584 25.882V22.1196L24 20.2384L20.7417 22.1196Z"
-          stroke="#FDBA74"
+          stroke="#1b83ac"
           strokeWidth="2"
         />
       </svg>
     )
   }
   
-  function IconTwo() {
-    return (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect width="48" height="48" rx="8" fill="#FFEDD5" />
-        <path
-          d="M28.0413 20L23.9998 13L19.9585 20M32.0828 27.0001L36.1242 34H28.0415M19.9585 34H11.8755L15.9171 27"
-          stroke="#FB923C"
-          strokeWidth="2"
-        />
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M18.804 30H29.1963L24.0001 21L18.804 30Z"
-          stroke="#FDBA74"
-          strokeWidth="2"
-        />
-      </svg>
-    )
-  }
   
-  function IconThree() {
-    return (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect width="48" height="48" rx="8" fill="#FFEDD5" />
-        <rect x="13" y="32" width="2" height="4" fill="#FDBA74" />
-        <rect x="17" y="28" width="2" height="8" fill="#FDBA74" />
-        <rect x="21" y="24" width="2" height="12" fill="#FDBA74" />
-        <rect x="25" y="20" width="2" height="16" fill="#FDBA74" />
-        <rect x="29" y="16" width="2" height="20" fill="#FB923C" />
-        <rect x="33" y="12" width="2" height="24" fill="#FB923C" />
-      </svg>
-    )
-  }
-

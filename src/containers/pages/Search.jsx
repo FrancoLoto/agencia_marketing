@@ -4,9 +4,8 @@ import Layout from "hocs/layouts/Layout"
 import { useEffect } from "react"
 import { Helmet } from 'react-helmet-async';
 import { connect } from "react-redux";
-import { search_blog, search_blog_page } from "redux/actions/blog/blog";
 import { useParams } from "react-router-dom";
-import BlogList from "components/blog/search/BlogList";
+
 
 function Search({
     posts,
@@ -29,7 +28,7 @@ function Search({
     return(
         <Layout>
             <Helmet>
-            <title>Murkiva | Search</title>
+            <title>MG Seguridad Privada | Blog</title>
             <meta name="description" content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones." />
             <meta name="keywords" content='agencia de software, agencia de marketing, creacion de pagina web' />
             <meta name="robots" content='all' />
@@ -54,13 +53,13 @@ function Search({
             <Navbar/>
             <div className="pt-36">
                 Search
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="mx-auto max-w-6xl my-10">
+                <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
+                    <div className="mx-auto max-w-full my-10">
                         <BlogList posts={posts&&posts} get_blog_list_page={search_blog_page} term={term} count={count&&count}/>
                     </div>
                 </div>
             </div>
-                <Footer/>
+            <Footer/>
         </Layout>
     )
 }

@@ -1,23 +1,24 @@
-import analytics from 'assets/img/analitycs.png'
-import megafono from 'assets/img/megafono.png'
+import vision from 'assets/img/vision.png'
+import mision from 'assets/img/mision.png'
+import valores from 'assets/img/valores.png'
 
 const incentives = [
 
     {
-      name: 'Análisis',
-      imageSrc: 'https://cdn-icons-png.flaticon.com/512/1472/1472090.png',
-      description: "Conocer el comportamiento del mercado permite un mejor rendimiento para tu empresa y te ayuda a estar alerta sobre los factores de riesgo. Por esta razón, hacer un análisis de mercado le traerá grandes beneficios a su empresa.",
+      name: 'Visión',
+      imageSrc: vision,
+      description: "Convertirnos en la empresa elegida por aquellos que reconocen la importancia fundamental de la protección y la tranquilidad en su vida. Nos esforzamos por liderar el sector de la seguridad, adoptando una mentalidad de constante innovación y comprometiéndonos a invertir en recursos y tecnología de vanguardia.",
     },
     {
-      name: 'Contenido',
-      imageSrc: 'https://cdn-icons-png.flaticon.com/512/1997/1997928.png',
-      description: "El marketing de contenidos es una técnica de marketing basada en la creación, publicación y distribución de contenidos relevantes, útiles y valiosos con el objetivo de atraer público potencial a nuestra marca o productos.",
+      name: 'Misión',
+      imageSrc: mision,
+      description: "Establecer relaciones sólidas y duraderas con nuestros clientes, convirtiéndonos en sus socios estratégicos y conocer en profundidad sus necesidades para asesorarlos de la mejor manera. Disponer de las mejores prácticas de seguridad, capacitando a nuestro equipo y utilizando tecnología de última generación. Trabajar incansablemente para garantizar la protección y tranquilidad de nuestros clientes, y superar continuamente sus expectativas en términos de calidad y confiabilidad.",
     },
     {
-      name: 'SEO',
-      imageSrc: 'https://cdn-icons-png.flaticon.com/512/2977/2977742.png',
+      name: 'Valores',
+      imageSrc: valores,
       description:
-        "Es el conjunto de técnicas y estrategias centradas en optimizar el posicionamiento orgánico en buscadores de internet.",
+        "Nuestros valores fundamentales son el pilar de nuestra ética profesional y se reflejan en cada aspecto de nuestro trabajo. Valoramos el respeto mutuo como equipo y hacia nuestros clientes, fomentando un ambiente de colaboración y confianza. Estos valores nos guían en nuestro camino hacia la excelencia, asegurando que cada servicio que brindamos sea respaldado por un compromiso sólido y una conducta ética impecable.",
     },
 
   ]
@@ -30,12 +31,10 @@ const incentives = [
           <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="max-w-3xl">
               <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                Construimos nuestro negocio en el servicio al cliente
+              Tu protección, nuestro compromiso.
               </h2>
-              <p className="mt-4 text-gray-500">
-                Al principio al menos, pero luego nos dimos cuenta de que podíamos ganar mucho más dinero si dejáramos de preocuparnos por eso.
-                Nuestra nueva estrategia es escribir un montón de cosas que se ven muy bien en los titulares,
-                luego aclararlas en letra pequeña pero esperar que la gente no las lea.
+              <p className="mt-4 text-gray-500">                
+              Nuestro compromiso se basa en brindarte servicios de seguridad integrales y confiables, respaldados por un equipo altamente capacitado y comprometido. Nos dedicamos a salvaguardar tu tranquilidad y bienestar, ofreciendo soluciones personalizadas que se adaptan a tus necesidades específicas. Con nosotros, puedes estar seguro de que tu protección estará garantizada.
               </p>
             </div>
             <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
