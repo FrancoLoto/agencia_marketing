@@ -244,7 +244,7 @@ if not DEBUG:
     # django-ckeditor will not work with S3 through django-storages without this line in settings.py
     AWS_QUERYSTRING_AUTH = False
 
-    AWS_ACCESS_KEY_ID = env('AWS_ACCCESS_KEY_ID')
+    AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
     AWS_SECRET_KEY = env('AWS_SECRET_KEY')
     AWS_STORAGE_BUCKET_NAME = env('AWS_STORAGE_BUCKET_NAME')
 
