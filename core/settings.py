@@ -17,7 +17,7 @@ DOMAIN= os.environ.get('DOMAIN')
 SECRET_KEY = os.environ
 
 
-DEBUG = 'RENDER' not in os.environ.get('DEBUG')
+DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS_DEV')
 
