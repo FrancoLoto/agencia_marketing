@@ -1,4 +1,4 @@
-import fotomg7 from 'assets/img/fotomg-7.png'
+import fotomg7 from 'static/media/fotomg-7.15f5123ef0c0acb11d4b.png'
 
 function Header(){
 
