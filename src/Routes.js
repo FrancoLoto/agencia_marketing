@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
+import Error404 from 'containers/errors/Error404';
+import Home from 'containers/pages/Home';
 import Services from 'containers/pages/Services';
 import About from 'containers/pages/About';
 import Blog from 'containers/pages/Blog';
 import Contact from 'containers/pages/Contact';
-import Error404 from 'containers/errors/Error404';
-import Home from 'containers/pages/Home';
 import { AnimatePresence } from 'framer-motion'
 import Category from 'containers/pages/Category';
 import PostDetail from 'containers/pages/PostDetail';
