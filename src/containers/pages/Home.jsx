@@ -7,22 +7,13 @@ import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/Layout"
 import { useEffect } from "react"
-import { connect } from "react-redux";
-import { get_blog_list } from "redux/actions/blog/blog";
 
 
-function Home({
-    get_blog_list,
-    posts
-}){
+
+function Home(){
     useEffect(()=>{
         window.scrollTo(0,0);
-        get_blog_list();
     },[]);
-
-    if ( !posts) {
-        return null; // O puedes mostrar un spinner de carga en su lugar
-    }
 
     return(
         <Layout>
@@ -31,7 +22,7 @@ function Home({
                 <Header/>
                 <Incentives/>
                 <Features/>
-                <BlogList posts={posts&&posts} />
+                <BlogList  />
                 <CTA/>
             </div>
             <Footer/>
@@ -39,12 +30,8 @@ function Home({
     )
 }
 
-const mapStateToProps = state => ({
-    posts: state.blog.blog_list,
-});
 
 
 
-export default connect(mapStateToProps, {
-    get_blog_list
-})(Home)
+
+export default Home
