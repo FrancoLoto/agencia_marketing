@@ -22,7 +22,7 @@ function AnimatedRoutes() {
             <Route path="*" element={<Error404 />} />
 
             {/* Home Display */}
-            <Route path="/inicio" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/servicios" element={<Services />} />
             <Route path="/nosotros" element={<About />} />
             <Route path="/blog" element={<Blog />} />
