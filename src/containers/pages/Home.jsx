@@ -20,9 +20,6 @@ function Home({
         get_blog_list();
     },[]);
 
-    if ( !posts) {
-        return null; // O puedes mostrar un spinner de carga en su lugar
-    }
 
     return(
         <Layout>
@@ -31,7 +28,11 @@ function Home({
                 <Header/>
                 <Incentives/>
                 <Features/>
-                <BlogList posts={posts&&posts} />
+                {posts&&posts.length > 0 ? (
+                    <BlogList posts={posts} />
+                ) : (
+                    <div>No hay publicaciones disponibles en este momento.</div>
+                )}
                 <CTA/>
             </div>
             <Footer/>
