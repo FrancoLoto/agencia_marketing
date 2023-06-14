@@ -7,13 +7,17 @@ import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/Layout"
 import { useEffect } from "react"
+import { connect } from "react-redux";
+import { get_blog_list } from "redux/actions/blog/blog";
 
 
-
-
-function Home(){
+function Home({
+    get_blog_list,
+    posts
+}){
     useEffect(()=>{
         window.scrollTo(0,0);
+        get_blog_list();
     },[]);
 
 
@@ -24,7 +28,11 @@ function Home(){
                 <Header/>
                 <Incentives/>
                 <Features/>
-                <BlogList />           
+                {posts&&posts.length > 0 ? (
+                    <BlogList posts={posts} />
+                ) : (
+                    <div>No hay publicaciones disponibles en este momento.</div>
+                )}
                 <CTA/>
             </div>
             <Footer/>
@@ -32,5 +40,12 @@ function Home(){
     )
 }
 
+const mapStateToProps = state => ({
+    posts: state.blog.blog_list,
+});
 
-export default Home
+
+
+export default connect(mapStateToProps, {
+    get_blog_list
+})(Home)
