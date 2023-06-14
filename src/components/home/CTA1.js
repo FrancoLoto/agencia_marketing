@@ -28,12 +28,12 @@ export default function CTA() {
             </Link>
           </div>
           <div className="ml-3 inline-flex rounded-md shadow">
-            <a
-              href="/nosotros"
+            <Link
+              to="/nosotros"
               className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-celeste hover:bg-indigo-50"
             >
               Aprende más
-            </a>
+            </Link>
           </div>
         </div>
       </div>

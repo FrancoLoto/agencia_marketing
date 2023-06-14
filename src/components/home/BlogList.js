@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
   export default function BlogList({posts}) {
 
@@ -25,13 +25,13 @@
                     </span>
                   </div>
                 </div>
-                <a href='/' className="mt-4 block">
+                <Link to='/' className="mt-4 block">
                   <figure className="lg:flex-shrink-0">
                       <img className="h-64 lg:w-96 w-full object-cover rounded" src={post.thumbnail} alt="" />
                   </figure>
                   <p className="mt-3 text-xl font-semibold text-gray-900 hover:text-celeste">{post.title}</p>
                   <p className="mt-3 text-base text-gray-500">{post.description}</p>
-                </a>
+                </Link>
                 <div className="mt-6 flex items-center">
                   <div className="flex-shrink-0">
                     
