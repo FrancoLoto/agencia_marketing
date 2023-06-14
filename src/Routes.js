@@ -19,7 +19,7 @@ function AnimatedRoutes() {
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
           {/* Error Display */}
-          <Route path="*" element={<Error404 />} />
+            <Route path="*" element={<Error404 />} />
 
             {/* Home Display */}
             <Route path="/inicio" element={<Home />} />
