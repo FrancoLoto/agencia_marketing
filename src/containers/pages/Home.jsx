@@ -29,7 +29,7 @@ function Home({
                 <Header/>
                 <Incentives/>
                 <Features/>
-                <BlogList posts={posts&&posts} categories={categories&&categories}/>
+                <BlogList posts={posts&&posts}/>
                 <CTA/>
             </div>
             <Footer/>

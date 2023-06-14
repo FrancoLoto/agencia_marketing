@@ -1,6 +1,6 @@
 
 
-  export default function BlogList({posts, categories}) {
+  export default function BlogList({posts}) {
 
     const latestPosts = posts.slice(0, 3);
 
