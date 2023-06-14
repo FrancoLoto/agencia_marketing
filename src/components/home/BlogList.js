@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
             </p>
           </div>
           <div className="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
-            {latestPosts.map((post) => (
+            {latestPosts&&latestPosts.map((post) => (
               <div key={post.title}>
                 <div>
                   <div className="inline-block">
