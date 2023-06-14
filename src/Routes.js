@@ -11,6 +11,7 @@ import PostDetail from 'containers/pages/PostDetail';
 import Terms from 'containers/pages/Terms';
 import PrivacyPolicy from 'containers/pages/PrivacyPolicy';
 
+
 function AnimatedRoutes() {
 
     const location = useLocation()
@@ -22,8 +23,8 @@ function AnimatedRoutes() {
             <Route path="*" element={<Error404 />} />
 
             {/* Home Display */}
-            <Route path="/" element={<Services />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/servicios" element={<Services />} />
             <Route path="/nosotros" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<PostDetail />} />
