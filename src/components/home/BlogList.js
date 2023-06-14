@@ -18,14 +18,16 @@ import { Link } from "react-router-dom";
               <div key={post.title}>
                 <div>
                   <div className="inline-block">
+                  {post.category && (
                     <span
                       className='text-gray-50 inline-flex items-center px-3 py-0.5 rounded-full bg-celeste-dos text-sm font-medium'                     
                     >
                       {post.category.name}
                     </span>
+                  )}
                   </div>
                 </div>
-                <Link to='/' className="mt-4 block">
+                <Link to={`/blog/${post.slug}`} className="mt-4 block">
                   <figure className="lg:flex-shrink-0">
                       <img className="h-64 lg:w-96 w-full object-cover rounded" src={post.thumbnail} alt="" />
                   </figure>
