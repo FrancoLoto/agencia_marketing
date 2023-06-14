@@ -22,8 +22,8 @@ function AnimatedRoutes() {
             <Route path="*" element={<Error404 />} />
 
             {/* Home Display */}
-            <Route path="/" element={<Home />} />
-            <Route path="/servicios" element={<Services />} />
+            <Route path="/" element={<Services />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/nosotros" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<PostDetail />} />
