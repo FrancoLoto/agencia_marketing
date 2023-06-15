@@ -19,12 +19,12 @@ function AnimatedRoutes() {
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
 
-            <Route path="/" element={<Home />} />
+            
           {/* Error Display */}
             <Route path="*" element={<Error404 />} />
 
             {/* Home Display */}
-            
+            <Route exact path="/" element={<Home />} />
             <Route path="/servicios" element={<Services />} />
             <Route path="/nosotros" element={<About />} />
             <Route path="/blog" element={<Blog />} />
