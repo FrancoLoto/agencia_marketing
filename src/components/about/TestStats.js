@@ -1,4 +1,4 @@
-import equipomg from 'assets/img/equipomg.png'
+
 
 
 const stats = [
@@ -40,7 +40,7 @@ const stats = [
               <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
                 <img
                   className="absolute inset-0 h-full w-full object-cover"
-                  src={equipomg}
+                  src={"https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/equipomg.1b1e712451601f63ec5d.png"}
                   alt=""
                 />
                 <div className="absolute inset-0 bg-celeste-dos mix-blend-multiply" />

@@ -1,5 +1,5 @@
 import { Typewriter } from 'react-simple-typewriter'
-import fotomg6 from 'assets/img/fotomg-6.png'
+
 
 function Header(){
 
@@ -43,7 +43,7 @@ function Header(){
                 </svg>
             </div>
             <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden bg-white blur-md lg:top-[calc(100%-45rem)] sm:top-[calc(100%-30rem)]">
-              <img src={fotomg6} className='w-full h-full object-cover'/>
+              <img src={"https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-6.bf0958b66fb243188681.png"} className='w-full h-full object-cover'/>
             </div>
             </div>
         </main>
