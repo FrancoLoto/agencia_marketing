@@ -2,6 +2,7 @@ import { connect } from "react-redux"
 import { Popover, Transition } from '@headlessui/react'
 import { useState, Fragment } from "react"
 import {Link, NavLink} from 'react-router-dom'
+import logo_mg from 'assets/img/logo.png'
 
 
 
@@ -58,7 +59,7 @@ function Navbar(){
                 <div className="-ml-4 -mt-2 hidden lg:flex flex-wrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
                     <Link to="/" className="ml-4 mt-2">
                     <img
-                    src={'https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/logo.4922371bf8e945770760.png'}
+                    src={'logo_mg'}
                     width={80}
                     height={60}
                     className=""/>
@@ -74,7 +75,7 @@ function Navbar(){
                 <div className="-ml-4 -mt-2 lg:hidden flex flex-wrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
                     <Link to="/" className="ml-4 mt-2">
                     <img
-                    src={'https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/logo.4922371bf8e945770760.png'}
+                    src={logo_mg}
                     width={80}
                     height={60}
                     className=""/>
