@@ -6,8 +6,10 @@ function Images() {
         <div className="w-full">
             <div className="grid grid-cols-2 gap-8">
             <img src={fotomg1}
+            alt="about-img1"
             className="w-full h-96 object-cover"/>
             <img src={fotomg5}
+            alt="about-img2"
             className="w-full h-96 object-cover"/>
             </div>
             

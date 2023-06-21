@@ -60,6 +60,7 @@ function Navbar(){
                     <Link to="/" className="ml-4 mt-2">
                     <img
                     src={'logo_mg'}
+                    alt="logo"
                     width={80}
                     height={60}
                     className=""/>
@@ -76,6 +77,7 @@ function Navbar(){
                     <Link to="/" className="ml-4 mt-2">
                     <img
                     src={logo_mg}
+                    alt="logo"
                     width={80}
                     height={60}
                     className=""/>

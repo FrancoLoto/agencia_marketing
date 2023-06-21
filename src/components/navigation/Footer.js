@@ -57,6 +57,7 @@ function Footer(){
             <div className="space-y-8 xl:col-span-1">
                 <img
                     src={logo_mg}
+                    alt="logo"
                     width={80}
                     height={70}
                     className=""
@@ -66,7 +67,7 @@ function Footer(){
               </p>
               <div className="flex space-x-6">
                 {navigation.social.map((item) => (
-                  <a key={item.name} href={item.href} className="text-gray-50 hover:text-celeste" target="_blank">
+                  <a key={item.name} href={item.href} className="text-gray-50 hover:text-celeste" target="_blank" rel="noreferrer">
                     <span className="sr-only">{item.name}</span>
                     <item.icon className="h-6 w-6" aria-hidden="true" />
                   </a>
@@ -89,7 +90,7 @@ function Footer(){
                 </div>
                 <div>
                   <h3 className="text-base font-medium text-gray-400">Enlaces</h3>
-                  <ul role="list" className="mt-4 space-y-4">
+                  <ul className="mt-4 space-y-4">
                     {navigation.company.map((item) => (
                       <li key={item.name}>
                         <a href={item.href} className="text-base text-gray-50 hover:text-celeste">
@@ -104,7 +105,7 @@ function Footer(){
                 
                 <div className="mt-12 md:mt-0">
                   <h3 className="text-base font-medium text-gray-400">Compañía</h3>
-                  <ul role="list" className="mt-4 space-y-4">
+                  <ul className="mt-4 space-y-4">
                     {navigation.legal.map((item) => (
                       <li key={item.name}>
                         <a href={item.href} className="text-base text-gray-50 hover:text-celeste">

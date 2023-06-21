@@ -41,7 +41,7 @@ const stats = [
                 <img
                   className="absolute inset-0 h-full w-full object-cover"
                   src={equipomg}
-                  alt=""
+                  alt="equipomg"
                 />
                 <div className="absolute inset-0 bg-celeste-dos mix-blend-multiply" />
                 <div className="absolute inset-0 bg-gradient-to-t from-celeste-dos via-celeste-dos opacity-80" />
