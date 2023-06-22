@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import logo_mg from 'assets/img/logo.png'
+
 
 const navigation = {
     
@@ -56,7 +56,7 @@ function Footer(){
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
                 <img
-                    src={logo_mg}
+                    src={'https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/logo.4922371bf8e945770760.png'}
                     alt="logo"
                     width={80}
                     height={70}

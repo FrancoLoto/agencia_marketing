@@ -6,6 +6,7 @@ from apps.category.serializers import CategorySerializer
 class PostSerializer(serializers.ModelSerializer):
 
     category = CategorySerializer()
+    get_status = serializers.CharField(source='status')
 
     class Meta:
 
@@ -20,7 +21,9 @@ class PostSerializer(serializers.ModelSerializer):
             'time_read',
             'published',
             'views',
-            'category'
+            'category',
+            'status',
+            'get_status'
         ]
 
 
@@ -40,5 +43,6 @@ class PostListSerializer(serializers.ModelSerializer):
             'time_read',
             'published',
             'views',
-            'category'
+            'category',
+            'status',
         ]

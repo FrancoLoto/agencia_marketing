@@ -28,7 +28,7 @@ function Header(){
                 </svg>
             </div>
             <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden bg-white blur-md lg:top-[calc(100%-45rem)] sm:top-[calc(100%-30rem)]">
-              <img src={fotomg9} className='w-full h-full object-cover'/>
+              <img src={fotomg9} alt="services-header-img" className='w-full h-full object-cover'/>
             </div>
             </div>
         </main>

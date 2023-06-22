@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function BlogList({posts}) {
+export default function BlogList({ posts }) {
 
     const latestPosts = posts.slice(0, 3);
 
