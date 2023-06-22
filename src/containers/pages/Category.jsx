@@ -5,7 +5,7 @@ import { useEffect } from "react"
 import { Helmet } from 'react-helmet-async';
 import { get_categories } from "redux/actions/categories/categories";
 import { connect } from "react-redux";
-import { get_blog_list, get_blog_list_category, get_blog_list_page } from "redux/actions/blog/blog";
+import { get_blog_list_category, get_blog_list_page } from "redux/actions/blog/blog";
 import CategoriesHeader from "components/blog/CategoriesHeader";
 import { useParams } from "react-router-dom";
 import BlogList from "components/blog/BlogList";

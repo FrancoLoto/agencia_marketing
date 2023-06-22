@@ -1,6 +1,6 @@
 import { connect } from "react-redux"
 import { Popover, Transition } from '@headlessui/react'
-import { useState, Fragment } from "react"
+import { Fragment } from "react"
 import {Link, NavLink} from 'react-router-dom'
 
 
@@ -36,7 +36,6 @@ const solutions = [
 
 function Navbar(){
 
-    const [loading,setLoading]=useState(true)
 
     window.onscroll = function() {scrollFunction()}
 
@@ -51,7 +50,7 @@ function Navbar(){
         }
     }
 
-    const [open, setOpen] = useState(false)
+
 
     return(
         <nav data-scroll data-scroll-id="hey" id='navbar' className='bg-black w-full py-6 top-0 transition duration-300 ease-in-out z-40 fixed'>
@@ -73,6 +72,8 @@ function Navbar(){
 
                     </div>
                 </div>
+
+                {/* Mobile Navbar */}
                 <div className="-ml-4 -mt-2 lg:hidden flex flex-wrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
                     <Link to="/" className="ml-4 mt-2">
                     <img

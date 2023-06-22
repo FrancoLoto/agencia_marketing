@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom'
 
 export default function CTA() {
 
-    const [loading,setLoading]=useState(true)
+    const [loading]=useState(true)
 
-    const [open, setOpen] = useState(false)
 
     return (
 

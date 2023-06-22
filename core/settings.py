@@ -200,7 +200,7 @@ DJOSER = {
     'USERNAME_RESET_CONFIRM_URL': 'username/reset/confirm/{uid}/{token}',
     'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SOCIAL_AUTH_TOKEN_STRATEGY': 'djoser.social.token.jwt.TokenStrategy',
-    'SOCIAL_AUTH_ALLOWED_REDIRECT_URIS': ['http://localhost:8000/google', 'http://localhost:8000/facebook'],
+    'SOCIAL_AUTH_ALLOWED_REDIRECT_URIS': ['http://mgseguridadprivada.com.ar/google', 'http://mgseguridadprivada.com.ar/facebook'],
     'SEND_ACTIVATION_EMAIL': True,
     'SERIALIZERS': {
         'user_create': 'apps.user.serializers.UserSerializer',
