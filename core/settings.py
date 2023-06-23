@@ -110,10 +110,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #}
 
 DATABASES = {
-        "default": env.db("DATABASE_URL"),
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-DATABASES["default"]["ATOMIC_REQUESTS"] = True
-
+}
 
 
 PASSWORD_HASHERS = [
@@ -231,6 +232,11 @@ if not DEBUG:
     ALLOWED_HOSTS=env.list('ALLOWED_HOSTS_DEPLOY')
     CORS_ORIGIN_WHITELIST = env.list('CORS_ORIGIN_WHITELIST_DEPLOY')
     CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS_DEPLOY')
+
+    DATABASES = {
+        "default": env.db("DATABASE_URL"),
+    }
+    DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     DEFAULT_FROM_EMAIL = 'MG Seguridad Privada - <mail@mgseguridadprivada.awsapps.com>'
