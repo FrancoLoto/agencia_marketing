@@ -9,6 +9,8 @@ import Layout from "hocs/layouts/Layout"
 import { useEffect } from "react"
 import { connect } from "react-redux";
 import { get_blog_list } from "redux/actions/blog/blog";
+import whatsapp_icon from "assets/img/whatsapp-icon.svg"
+import { Link } from "react-router-dom"
 
 
 function Home({
@@ -34,6 +36,15 @@ function Home({
                     <div>No hay publicaciones disponibles en este momento.</div>
                 )}
                 <CTA/>
+                <div className="sociales">
+                    <Link to="https://wa.me/5492920248332" target="_blank"
+                    ><img
+                        src={whatsapp_icon}
+                        alt="whatsapp-logo"
+                        loading="lazy"
+                        className="socicon"
+                    /></Link>
+                </div>
             </div>
             <Footer/>
         </Layout>
