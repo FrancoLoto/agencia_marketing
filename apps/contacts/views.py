@@ -34,8 +34,8 @@ class ContactCreateView(APIView):
                 + '\nEmail: ' + email
                 + '\n\nMensaje:\n' + message
                 + '\nTeléfono: ' + phone,
-                'mail@mgseguridadprivada.awsapps.com',
-                ['mail@mgseguridadprivada.awsapps.com'],
+                'MGseguridadprivada2017@hotmail.com',
+                ['MGseguridadprivada2017@hotmail.com'],
                 fail_silently=False
             )
 
