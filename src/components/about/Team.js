@@ -1,10 +1,4 @@
 
-import fotomg4 from 'assets/img/fotomg-4.jpeg'
-
-import fotomg14 from 'assets/img/fotomg-14.jpeg'
-
-
-
 
 const people = [
     {
@@ -26,7 +20,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        fotomg4,
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-4.d21b5111715a8c835eb3.jpeg",
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -66,7 +60,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        fotomg14,
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-14.0c4d168bb9d6343282ac.jpeg",
       twitterUrl: '#',
       linkedinUrl: '#',
     },
