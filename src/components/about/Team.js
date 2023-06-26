@@ -1,12 +1,8 @@
-import fotomg2 from 'assets/img/fotomg-2.png'
-import fotomg3 from 'assets/img/fotomg-3.png'
+
 import fotomg4 from 'assets/img/fotomg-4.jpeg'
-import fotomg10 from 'assets/img/fotomg-10.png'
-import fotomg11 from 'assets/img/fotomg-11.png'
-import fotomg12 from 'assets/img/fotomg-12.png'
-import fotomg13 from 'assets/img/fotomg-13.png'
-import fotomg14 from 'assets/img/fotomg-14.png'
-import fotomg15 from 'assets/img/fotomg-15.png'
+
+import fotomg14 from 'assets/img/fotomg-14.jpeg'
+
 
 
 
@@ -15,14 +11,14 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        fotomg2,
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-2.3c88ae55a30cdc9e2f41.png",
       
     },
     {
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        fotomg3,
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-3.973decec8c9f2a655496.png",
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -38,7 +34,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        fotomg10,
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-10.f923c484f0cb10a5e7cf.png",
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -46,7 +42,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        fotomg11,
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-11.dbd784120ae8145ccde0.png",
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -54,7 +50,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        fotomg12,
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-12.923d945bc29be3e60c0f.png",
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -62,7 +58,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        fotomg13,
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-13.f732d6744fd91e150f79.png",
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -78,7 +74,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        fotomg15,
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-15.8e094dcfd9d841005bf3.png",
       twitterUrl: '#',
       linkedinUrl: '#',
     },
