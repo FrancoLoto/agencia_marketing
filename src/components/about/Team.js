@@ -1,6 +1,6 @@
 import fotomg2 from 'assets/img/fotomg-2.png'
 import fotomg3 from 'assets/img/fotomg-3.png'
-import fotomg4 from 'assets/img/fotomg-4.png'
+import fotomg4 from 'assets/img/fotomg-4.jpeg'
 import fotomg10 from 'assets/img/fotomg-10.png'
 import fotomg11 from 'assets/img/fotomg-11.png'
 import fotomg12 from 'assets/img/fotomg-12.png'

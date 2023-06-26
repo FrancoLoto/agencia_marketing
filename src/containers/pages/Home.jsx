@@ -9,7 +9,7 @@ import Layout from "hocs/layouts/Layout"
 import { useEffect } from "react"
 import { connect } from "react-redux";
 import { get_blog_list } from "redux/actions/blog/blog";
-import whatsapp_icon from "assets/img/whatsapp-icon.svg"
+import whatsapp_icon from "assets/img/whatsapp.png"
 import { Link } from "react-router-dom"
 
 

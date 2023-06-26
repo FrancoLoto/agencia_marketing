@@ -1,5 +1,5 @@
 import fotomg1 from 'assets/img/fotomg-1.png'
-import fotomg5 from 'assets/img/fotomg-5.png'
+import fotomg5 from 'assets/img/fotomg-5.jpeg'
 
 function Images() {
     return(

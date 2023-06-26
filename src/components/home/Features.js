@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const features = [
   { name: 'Vigilancia física', description: 'Supermercado, bancos, instituciones privadas y públicas.' },
   { name: 'Vigilancia local y rural', description: 'Casas y barrios privados, campos, chacras.' },
-  { name: 'Traslado y seguimiento de valores en ruta', description: 'Seguimiento en ruta para todo tipo de vehículos.' },
+  { name: 'Custodia de mercadería en tránsito', description: 'Seguimiento en ruta para todo tipo de vehículos.' },
 
   { name: 'Vigilancia para eventos', description: 'Control de admisión y permanencia. Cumpleaños, casamientos, eventos privados y públicos.' },
   { name: 'Custodia VIP', description: 'Destinado para altos directivos, figuras públicas, grupos familiares.' },
