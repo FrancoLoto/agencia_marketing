@@ -47,7 +47,7 @@ class ContactCreateView(APIView):
                 message=message,
             )
 
-            return Response({'success': 'Mensaje enviado correnctamente.'})
+            return Response({'success': 'Mensaje enviado correctamente.'})
         except:
             return Response({'error': 'Mensaje no enviado.'})
 

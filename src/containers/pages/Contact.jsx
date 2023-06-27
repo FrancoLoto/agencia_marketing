@@ -69,16 +69,16 @@ function Contact(){
                         message:'',
                         phone:'',
                     })
-                    alert('Message has been sent.')
+                    alert('El mensaje ha sido enviado.')
                 }else{
                     setLoading(false);
-                    alert('Error sending message.')
+                    alert('Error enviando mensaje.')
                 }
             }
             fetchData()
 
         }else{
-            alert('You must accept the terms of service and conditions')
+            alert('Debes aceptar los términos y condiciones y poñíticas de privacidad.')
         }
     }
 

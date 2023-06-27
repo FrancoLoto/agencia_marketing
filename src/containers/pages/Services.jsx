@@ -36,7 +36,7 @@ const posts_services = [
     },
     {
       id: 4,
-      title: 'Traslado de valores en ruta',
+      title: 'Custodia de mercadería en tránsito',
       img: seguridad_coche,
       description:
         'Realizamos seguimiento y traslado de mercadería, bienes y valores en tránsito.',
