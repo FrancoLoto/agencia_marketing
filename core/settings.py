@@ -209,7 +209,7 @@ AUTH_USER_MODEL = 'user.UserAccount'
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3001',
     'http://localhost:3000',
-    
+
 ]
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3001',

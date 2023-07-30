@@ -13,9 +13,9 @@ activecampaign_url = settings.ACTIVE_CAMPAIGN_URL
 activecampaign_key = settings.ACTIVE_CAMPAIGN_KEY
 
 
-
 class ContactCreateView(APIView):
     permission_classes = (permissions.AllowAny,)
+    
     def post(self, request, format=None):
         data = self.request.data
 
@@ -24,7 +24,6 @@ class ContactCreateView(APIView):
         subject = data['subject']
         message = data['message']
         phone = data['phone']
-
 
         try:
             send_mail(
@@ -54,13 +53,14 @@ class ContactCreateView(APIView):
 
 class OptInView(APIView):
     permission_classes = (permissions.AllowAny,)
+
     def post(self, request, format=None):
 
         data = self.request.data
 
-        email=data['email']
-        tag=data['tag']
-        list=data['list']
+        email = data['email']
+        tag = data['tag']
+        list = data['list']
 
         try:
             # Create/Update Contact
@@ -129,6 +129,7 @@ class OptInView(APIView):
                     status=status.HTTP_500_INTERNAL_SERVER_ERROR
                 )
 
-            return Response({'success': 'Contacto agregado a la lista de emails.'},status=status.HTTP_200_OK)
+            return Response({'success': 'Contacto agregado a la lista de emails.'}, status=status.HTTP_200_OK)
         except:
-            return Response({'error': 'Error agregando contacto a la lista de emails. Intenta de nuevo.'},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response({'error': 'Error agregando contacto a la lista de emails. Intenta de nuevo.'}, 
+                            status=status.HTTP_500_INTERNAL_SERVER_ERROR)

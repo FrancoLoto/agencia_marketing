@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import *
+
+from .views import ContactCreateView, OptInView
 
 urlpatterns = [
-    path('', ContactCreateView.as_view()),
-    path('opt-in', OptInView.as_view()),
+    path("", ContactCreateView.as_view()),
+    path("opt-in", OptInView.as_view()),
 ]

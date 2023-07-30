@@ -2,16 +2,14 @@ from django.db import models
 
 
 class Category(models.Model):
-
     class Meta:
-        verbose_name = 'Categoría'
-        verbose_name_plural = 'Categorías'
+        verbose_name = "Categoría"
+        verbose_name_plural = "Categorías"
 
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
     views = models.IntegerField(default=0, blank=True)
-    parent = models.ForeignKey('self', related_name='children', on_delete=models.CASCADE, blank=True, null=True)
-
+    parent = models.ForeignKey("self", related_name="children", on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
         return self.name
@@ -20,9 +18,9 @@ class Category(models.Model):
         views = ViewCount.objects.filter(category=self)
         return views
 
-class ViewCount(models.Model):
 
-    category = models.ForeignKey(Category, related_name='category_view_count', on_delete=models.CASCADE)
+class ViewCount(models.Model):
+    category = models.ForeignKey(Category, related_name="category_view_count", on_delete=models.CASCADE)
     ip_address = models.CharField(max_length=255)
 
     def __str__(self):
