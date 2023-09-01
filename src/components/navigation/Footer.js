@@ -17,7 +17,7 @@ const navigation = {
     social: [
       {
         name: 'Facebook',
-        href: 'https://www.facebook.com/profile.php?id=100085392960004/',
+        href: 'https://www.facebook.com/profile.php?id=100085392960004',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
