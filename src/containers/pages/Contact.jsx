@@ -78,7 +78,7 @@ function Contact(){
             fetchData()
 
         }else{
-            alert('Debes aceptar los términos y condiciones y poñíticas de privacidad.')
+            alert('Debes aceptar los términos y condiciones y políticas de privacidad.')
         }
     }
 

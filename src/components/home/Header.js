@@ -10,7 +10,7 @@ function Header(){
                 <div className="mx-auto xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 pt-24 pb-12">
                     <div>
                         <h1 className="text-3xl font-semibold tracking-tight pb-10 text-gray-900 sm:text-7xl">
-                        Seguridad en cada paso: <span> </span>
+                        Seguridad en cada paso. <span> </span>
                 <Typewriter
                     words={['Control', 'Vigilancia', 'Custodia',]}
                     loop={0}
