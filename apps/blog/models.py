@@ -11,7 +11,7 @@ User = settings.AUTH_USER_MODEL
 
 
 def blog_thumbnail_directory(instance, filename):
-    return "blog/{0}/{1}".format(instance.title, filename)
+    return 'blog/{0}/{1}'.format(instance.title, filename)
 
 
 class Post(models.Model):
