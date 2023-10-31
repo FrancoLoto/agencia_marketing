@@ -52,7 +52,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-brian.jpg",
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-auto2.jpg",
       twitterUrl: '#',
       linkedinUrl: '#',
     },
