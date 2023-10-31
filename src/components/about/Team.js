@@ -5,7 +5,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-2.3c88ae55a30cdc9e2f41.png",
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-mamxi.jpg",
       
     },
     {
@@ -52,7 +52,7 @@ const people = [
       name: 'Lindsay Walton',
       role: 'Front-end Developer',
       imageUrl:
-        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-13.f732d6744fd91e150f79.png",
+        "https://mgseguridadprivada.s3.us-west-2.amazonaws.com/media/fotomg-brian.jpg",
       twitterUrl: '#',
       linkedinUrl: '#',
     },

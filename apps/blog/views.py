@@ -12,6 +12,7 @@ from .permissions import AuthorPermission, IsPostAuthorOrReadOnly
 from .serializers import PostSerializer
 
 
+# Vista para listar todos los blogs (público)
 class BlogListView(APIView):
     permission_classes = (permissions.AllowAny,)
 
@@ -28,6 +29,7 @@ class BlogListView(APIView):
             return Response({"error": "No posts found"}, status=status.HTTP_404_NOT_FOUND)
 
 
+# Vista para listar blogs por categoría (público)
 class ListPostByCategoryView(APIView):
     permission_classes = (permissions.AllowAny,)
 
@@ -61,6 +63,7 @@ class ListPostByCategoryView(APIView):
             return Response({"error": "No posts found"}, status=status.HTTP_404_NOT_FOUND)
 
 
+# Vista para ver un blog individual con contador de vistas
 class PostDetailView(APIView):
     permission_classes = (permissions.AllowAny,)
 
@@ -87,6 +90,7 @@ class PostDetailView(APIView):
             return Response({"error": "Post no existe"}, status=status.HTTP_404_NOT_FOUND)
 
 
+# Vista para listar blogs de un autor (requiere autenticación)
 class AuthorBlogListView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -105,6 +109,7 @@ class AuthorBlogListView(APIView):
             return Response({"error": "No posts found"}, status=status.HTTP_404_NOT_FOUND)
 
 
+# Vista para editar un blog (requiere ser el autor)
 class EditBlogPostView(APIView):
     permission_classes = (IsPostAuthorOrReadOnly,)
     parser_classes = [MultiPartParser, FormParser]
@@ -116,6 +121,7 @@ class EditBlogPostView(APIView):
 
         post = Post.objects.get(slug=slug)
 
+        # Actualizar los campos del blog si se proporcionan
         if data["title"]:
             if not (data["title"] == "undefined"):
                 post.title = data["title"]
@@ -153,6 +159,7 @@ class EditBlogPostView(APIView):
         return Response({"success": "Post edited"})
 
 
+# Vista para cambiar el estado de un blog a borrador (requiere ser el autor)
 class DraftBlogPostView(APIView):
     permission_classes = (IsPostAuthorOrReadOnly,)
 
@@ -168,6 +175,7 @@ class DraftBlogPostView(APIView):
         return Response({"success": "Post edited"})
 
 
+# Vista para cambiar el estado de un blog a publicado (requiere ser el autor)
 class PublishBlogPostView(APIView):
     permission_classes = (IsPostAuthorOrReadOnly,)
 
@@ -183,6 +191,7 @@ class PublishBlogPostView(APIView):
         return Response({"success": "Post edited"})
 
 
+# Vista para eliminar un blog (requiere ser el autor)
 class DeleteBlogPostView(APIView):
     permission_classes = (IsPostAuthorOrReadOnly,)
 
@@ -194,6 +203,7 @@ class DeleteBlogPostView(APIView):
         return Response({"success": "Post edited"})
 
 
+# Vista para crear un nuevo blog (requiere ser el autor)
 class CreateBlogPostView(APIView):
     permission_classes = (AuthorPermission,)
 
